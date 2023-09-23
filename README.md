@@ -42,11 +42,6 @@ To get started with the Facebook Event Scraper, follow these steps:
 
 You can customize the scraper's behavior by modifying the configuration in the `main.py` file. This file allows you to adjust various settings such as the maximum number of events to scrape, the output file name, and the delay between requests to Facebook's servers to avoid rate limiting.
 
-```python
-# Configuration settings
-MAX_EVENTS_TO_SCRAPE = 1000  # Maximum number of events to scrape
-OUTPUT_CSV_FILE = "events.csv"  # Output CSV file name
-```
 
 ## License
 

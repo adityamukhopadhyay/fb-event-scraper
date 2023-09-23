@@ -28,10 +28,10 @@ To get started with the Facebook Event Scraper, follow these steps:
    pip install -r requirements.txt
    ```
 
-3. **Usage**: Use the scraper by running the Python script `scraper.py`. Customize the location and filters according to your requirements:
+3. **Usage**: Use the scraper by running the Python script `main.py`. Customize the location and filters according to your requirements:
 
    ```shell
-   python scraper.py --location "New York, NY" --keywords "music, festival" --start-date "2023-01-01" --end-date "2023-12-31"
+   python scraper.py 
    ```
 
    Replace the arguments with your desired location, keywords, date range, and any other filters you wish to apply.
@@ -40,13 +40,12 @@ To get started with the Facebook Event Scraper, follow these steps:
 
 ## Configuration
 
-You can customize the scraper's behavior by modifying the configuration in the `config.py` file. This file allows you to adjust various settings such as the maximum number of events to scrape, the output file name, and the delay between requests to Facebook's servers to avoid rate limiting.
+You can customize the scraper's behavior by modifying the configuration in the `main.py` file. This file allows you to adjust various settings such as the maximum number of events to scrape, the output file name, and the delay between requests to Facebook's servers to avoid rate limiting.
 
 ```python
 # Configuration settings
 MAX_EVENTS_TO_SCRAPE = 1000  # Maximum number of events to scrape
 OUTPUT_CSV_FILE = "events.csv"  # Output CSV file name
-REQUEST_DELAY_SECONDS = 2  # Delay between HTTP requests (in seconds)
 ```
 
 ## License
@@ -55,6 +54,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Acknowledgments
 
-This Facebook Event Scraper was created by [Your Name] and is actively maintained by the open-source community. We appreciate your contributions and feedback to make this tool even more robust and valuable.
+This Facebook Event Scraper was created by Aditya Mukhopadhyay and is actively maintained by the open-source community. We appreciate your contributions and feedback to make this tool even more robust and valuable.
 
 If you encounter any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request. We welcome your contributions to help us maintain and enhance this project.
